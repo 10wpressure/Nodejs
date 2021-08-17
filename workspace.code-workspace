@@ -1,0 +1,10 @@
+{
+  "folders": [
+	{
+		"path": "..\\JavaScript\\VanillaJS"
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5936
+  }
+}
