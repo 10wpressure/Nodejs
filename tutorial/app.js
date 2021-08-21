@@ -1,9 +1,7 @@
-const { readFile } = require("fs");
+const { createReadStream } = require("fs");
 
-readFile("./content/first.txt", "utf8", (err, data) => {
-  if (err) {
-    return;
-  } else {
-    console.log(data);
-  }
+const stream = createReadStream("./content/big.txt");
+
+stream.on("data", (result) => {
+  console.log(result);
 });
