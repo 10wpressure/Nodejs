@@ -1,15 +1,9 @@
-const http = require("http");
+const { readFile } = require("fs");
 
-const server = http.createServer((req, res) => {
-  if (req.url === "/") {
-    res.end("Home Page");
-  } else if (req.url === "/about") {
-    res.end("About Page");
+readFile("./content/first.txt", "utf8", (err, data) => {
+  if (err) {
+    return;
   } else {
-    res.end("Error Page");
+    console.log(data);
   }
-});
-
-server.listen(5000, "localhost", 1000, () => {
-  console.log("Server is listening on port 5000...");
 });
