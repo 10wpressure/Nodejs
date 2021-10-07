@@ -1,0 +1,29 @@
+{
+  "name": "jobs",
+  "version": "1.0.0",
+  "description": "my first app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "B.Kuznetsov",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/common": "^2.4.0",
+    "@ethereumjs/tx": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "ethereumjs-tx": "^2.1.2",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "http-status-codes": "^2.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.5",
+    "web3": "^1.6.0",
+    "web3js-quorum": "^21.7.0-rc1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
