@@ -12,8 +12,8 @@ const {
 router.route('/').get(getAllUsers);
 
 router.route('/showMe').get(showCurrentUser);
-router.route('/updateUser').post(updateUser);
-router.route('/updateUserPassword').post(updateUserAndPassword);
+router.route('/updateUser').patch(updateUser);
+router.route('/updateUserPassword').patch(updateUserAndPassword);
 
 router.route('/:id').get(getSingleUser);
 
